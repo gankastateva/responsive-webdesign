@@ -7,6 +7,7 @@
             box-sizing: border-box;
         }
 
+
         [class*="col-"] {
             float: left;
             padding: 15px;
@@ -48,12 +49,35 @@
             .col-11 {width: 91.66%;}
             .col-12 {width: 100%;}
         }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color : #ff2816;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
         img {
             width: 100%;
         }
     </style>
 </head>
 <body>
+<div class="col-3 menu">
+    <ul>
+        <li>Menu item 1</li>
+        <li>Menu item 2</li>
+        <li>Menu item 3</li>
+        <li>Menu item 4</li>
+    </ul>
+</div>
     <div class="col-12">
         <div class="flex-container">
             <div class="item">
