@@ -8,17 +8,8 @@
 <header>
     <div class="layout-row layout-flexbox">
         <div id="top-logo">
-            <svg viewBox="-100 -100 300 300" height="68px" width="68px" class="logo-svg">
-                <path
-                        +-- Move to Point
-                        |
-                        |        +-- Line to
-                        |        |
-                        |        |                  +-- close path
-                        |        |                  |
-                        d="M 100,10 L 200,60 L 100,130 Z" fill="firebrick"
-                />
-            </svg>
+            <img id="logo-big" src="../images/happyshops.ch.svg" >
+            <img id="logo-small" src="../images/smile.PNG">
         </div>
         <div class="site-title"><a href="/" rel="home">Responsives Webdeseign Schulung</a></div>
     </div>
@@ -34,6 +25,33 @@
 <main>
     <div class="header-image">
         <img src="../images/media-query-for-mobile-first.png">
+    </div>
+</main>
+
+<header class="entry-header">
+    <div class="layout-row">
+        <h1>
+            Display: flex
+        </h1>
+    </div>
+</header>
+<main>
+    <div class="flexbox-container">
+        <div id="df" class="displayflex">
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+            <div class="fi flexitem">PUGs lover</div>
+        </div>
+        <div class="selbox">
+            <label><input type="radio" checked name="displayflex" value="flex"> flex</label>
+            <label><input type="radio" name="displayflex" value="block"> block</label>
+            <label><input type="radio" name="displayflex" value="inline-block"> inline-block</label>
+        </div>
     </div>
 </main>
 </body>
