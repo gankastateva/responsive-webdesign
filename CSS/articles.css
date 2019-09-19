@@ -1,0 +1,72 @@
+h1 { text-align: center; }
+img { width: 100%; height: auto; }
+figure { margin: 0; width: 100%; background: hsl(30,40%,96%)}
+article {margin-bottom: 1em; }
+.topmenu ul {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content:space-between;
+    -ms-flex-pack:justify; }
+.topmenu li {
+    background: lightpink;
+    color: white;
+    padding: 1em;
+    display: inline-block;
+    width: 49%; font-size: 1.2em;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 1ex }
+
+@media (min-width: 720px) {
+    h2 { margin-top: 0; }
+    article {
+        display: flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        justify-content:space-between;
+        -ms-flex-pack:justify;
+    }
+    article figure { width: 36%;}
+    article div { width: 58%;}
+}
+
+@media (min-width: 980px) {
+    main {
+        display: flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        justify-content:space-between;
+        -ms-flex-pack:justify;
+    }
+
+    article:nth-child(1), article:nth-child(2) { width: 49%; margin-bottom: 3em; }
+    article:nth-child(3), article:nth-child(4), article:nth-child(5), article:nth-child(6) {
+        width: 23.5%
+    }
+
+    article:nth-child(3), article:nth-child(4), article:nth-child(5), article:nth-child(6)  {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    article:nth-child(3) figure, article:nth-child(4) figure, article:nth-child(5) figure, article:nth-child(6) figure  {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    article:nth-child(3) div, article:nth-child(4) div, article:nth-child(5) div, article:nth-child(6) div  {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1260px) {
+    .topmenu li {
+        width: 24%; height: 120px; font-size: 1.4em; }
+}
